@@ -9,4 +9,4 @@ const gymSchema = new Schema({
   }
 })
 
-module.exports = mongoose.model('exercise', gymSchema)
+module.exports = mongoose.model('Exercise', gymSchema)
