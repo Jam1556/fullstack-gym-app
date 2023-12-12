@@ -3,11 +3,15 @@ const Exercise = require("../models/model")
 // Create Api Functions
 
 const getExercises = async (req, res) => {
-  const items = await Exercise.find({})
-  res.json({
-    message: "All items ",
-    exercise: items
-  })
+  try {
+    const items = await Exercise.find({})
+    res.json({
+      message: "All items ",
+      exercise: items
+    })
+  } catch (error) {
+    res.status(500).json({ Message: "Unable to get Exercies Error Info" + error })
+  }
 }
 
 
@@ -16,9 +20,10 @@ const deleteExercise = async (req, res) => {
 
     const { id } = req.params
 
-    if (!id) return res.status(500).json({ Message: "Id not found " + id })
 
-    const deleteItem = await Exercise.findByIdAndDelete({ _id: id })
+
+    const deleteItem = await Exercise.findByIdAndDelete(id)
+    if (!id) return res.status(500).json({ Message: "Id not found " + id })
 
     res.status(200).json(deleteItem)
 
@@ -52,19 +57,14 @@ const editExercise = async (req, res) => {
 const createExercise = async (req, res) => {
   try {
     const { text } = req.body
-
     const createObject = new Exercise({
       text,
     })
-
     const newObject = await createObject.save()
-
+    if (!text) return res.status().json({ Message: "enter text" + req.body })
     res.status(200).json(newObject)
-
   } catch (error) {
-
     res.status(500).json({ Message: "Unable to create Error Info " + error })
-
   }
 }
 
