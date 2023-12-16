@@ -1,3 +1,208 @@
-.Container-Nav{
-  border-style: solid;
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@500&display=swap');
+
+
+ /* -------------------Nav CSS--------------------*/
+
+*{
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+}
+
+ .Container-Nav{
+  height: 65px;
+  border-style: none;
+}
+
+.header{
+  display: flex;
+  flex-direction:  row;
+  justify-content: space-between;
+  align-items:center;
+}
+
+
+
+.title{
+
+  font-weight: 900;
+  font-size: 35px;
+  justify-content: left;
+  align-items: center;
+  transform: translate(70px);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+
+}
+
+.title:hover{
+
+  color: rgb(0, 224, 255)
+}
+
+.bi-search{
+  border-right: solid;
+  padding-right: 20px;
+  padding-left: 20px;
+  transform: translate(140px);
+  border-left: solid;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-color: black;
+  
+
+}
+.bi-search:hover{
+  color: rgb(0, 224, 255)
+
+}
+
+
+.bi-person-circle{
+  transform: translate(-30px);
+  padding-left: 30px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  
+}
+
+
+.bi-person-circle:hover{
+  color: rgb(0, 224, 255)
+}
+
+
+.workout{
+  font-weight: 600;
+  font-size: 1.5rem;
+  transform: translate(180px);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.workout:hover{
+  color: rgb(0, 224, 255);
+  font-size: 1.7rem;
+
+}
+
+
+
+
+.stats{
+  font-weight: 600;
+  font-size: 30px;
+  font-size: 1.5rem;
+  transform: translate(180px);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  
+}
+
+.stats:hover{
+  color: rgb(0, 224, 255);
+  font-size: 1.7rem;
+}
+
+
+.bi-x-diamond-fill{
+  transform: translate(180px);
+}
+
+
+ /* -------------------statsPage--------------------*/
+
+
+ .statsPage-container{
+  height: 100vh;
+  background-color: rgb(245, 245, 245);
+  
+
+ }
+
+
+ .performance-title{
+  font-weight: 200;
+  font-size: 40px;
+  position: relative;
+  top: 80px;
+  left: 160px;
+  
+ }
+
+ .boxes{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 100px;
+
+ }
+
+ .performance-box{
+  position: relative;
+  top: 50px;
+  left: 130px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  
+
+
+  height: 296px;
+  width: 533px;
+  border-radius: 23px ;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+ }
+
+ .performance-box-strings{
+  position: relative;
+  left: 20px;
+  color: rgba(0, 0, 0, 0.36);
+  font-size: 24px;
+  font-weight: 300;
+ }
+
+
+ .goal-box{
+  position: relative;
+  top: 50px;
+  left: 130px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 170px;
+
+  height: 296px;
+  width: 533px;
+  border-radius: 23px ;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+ }
+
+ .goal-box-strings{
+  position: relative;
+  left: 20px;
+  color: rgba(0, 0, 0, 0.36);
+  font-size: 24px;
+  font-weight: 300;
+ }
+
+/*---------------Footer--------------*/
+
+.footer-container{
+  height: 100px;
+  border: solid ;
+  background-color: rgb(132, 132, 132);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  color: white;
+  
+}
+
+.footer-string-1{
+
+  left: 200px;
+  font-size: 20px;
 }
