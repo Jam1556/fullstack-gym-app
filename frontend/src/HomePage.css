@@ -1,0 +1,67 @@
+.homepage-Container{
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-one-container{
+  height: 100vh;
+  border-color: red;
+  background-color: rgb(245, 245, 245);
+  font-size: 96px;
+  font-weight: 900;
+
+}
+
+.big-title{
+  position: relative;
+  left: 50px;
+  top: 50px
+}
+
+.section-two-container{
+  height: 100vh;
+  border-color: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-section-one-container{
+  
+  height: 40vh;
+  border-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.sign-up{
+  font-weight: 900;
+  font-size: 50px;
+
+}
+
+.bi-arrow-right{
+  font-size: 5.0rem;
+  -webkit-text-stroke: 5px;
+}
+
+
+.sub-section-two-container{
+
+  height: 60vh;
+  border-color: orange;
+
+
+
+
+}
+.description-text{
+  text-align: center;
+  color: rgb(94, 94, 94);
+  font-size: 30px;
+  position: relative;
+  top: 100px;
+}

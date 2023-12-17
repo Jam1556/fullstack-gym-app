@@ -1,25 +1,42 @@
 import "./App.css";
 import StatsPage from "./Pages/statsPage"
-import NavBar from "./Compoents/navBar"
-import Footer from "./Compoents/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import HomePage from "./Pages/HomePage";
+import LoginPage from "./Pages/LoginPage";
+import "./HomePage.css"
+import HomePageBar from "./Compoents/HomePageBar";
 
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
+
       <Routes>
         <Route
 
-          path='/'
+          path='/StatsPage'
           element={<StatsPage />}
 
 
         />
 
-      </Routes>
+        <Route
 
-      <Footer />
+          path="/"
+          element={<HomePage />}
+
+
+        />
+
+        <Route
+
+          path="/Login"
+          element={<LoginPage />}
+
+
+        />
+
+
+      </Routes>
     </BrowserRouter>
   );
 }

@@ -8,6 +8,10 @@ const Footer = () => {
       <p className='footer-string-1' >About us</p>
 
 
+
+
+
+
     </div>
   )
 }
