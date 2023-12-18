@@ -1,10 +1,53 @@
-import './App.css';
+import "./App.css";
+import StatsPage from "./Pages/statsPage"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import HomePage from "./Pages/HomePage";
+import { useState, UseEffect } from "react";
+import Signup from "./Pages/Signup";
+import "./HomePage.css"
+import HomePageBar from "./Compoents/HomePageBar";
+import { LoginContext } from "./Context/LoginContext";
 
 function App() {
+
+  const [action, setAction] = useState("")
+
   return (
-    <div className="App">
-      
-    </div>
+
+    <BrowserRouter>
+      <LoginContext.Provider value={{ action, setAction }}>
+
+
+        <Routes>
+          <Route
+
+            path='/StatsPage'
+            element={<StatsPage />}
+
+
+          />
+
+          <Route
+
+            path="/"
+            element={<HomePage />}
+
+
+          />
+
+          <Route
+
+            path="/Signup"
+            element={<Signup />}
+
+
+          />
+
+
+
+        </Routes>
+      </LoginContext.Provider>
+    </BrowserRouter>
   );
 }
 
