@@ -4,41 +4,49 @@ const WorkoutCard = ({ exercises }) => {
   console.log("Exercises:", exercises);
 
   const cardStyle = {
-    border: "8px solid",
+    borderRadius:"10px",
+    border: "2px solid",
     width: "18%",
     height: "400px",
-    backgroundColor: "grey"
+position: "relative",
+    left:"10%",
+
+
   };
 
-  // Retrieve the most recently added exercise
-  const mostRecentExercise =
-    exercises && exercises.exercise && exercises.exercise.length > 0
-      ? exercises.exercise[exercises.exercise.length - 1]
-      : null;
+  const entryStyle = {
+    backgroundColor: "turquoise",
+    borderRadius:"5px",
+    border: "1px solid"
+  }
 
-  return (
-    <div style={cardStyle}>
-      <h2>Most Recent Exercise</h2>
-      {mostRecentExercise ? (
-        <ul>
-          <li key={mostRecentExercise._id}>
-            <strong>Exercise:</strong> {mostRecentExercise.text}
+  // Retrieve the most recently added exercise
+  const recentExercises =
+  exercises && exercises.exercise
+    ? exercises.exercise.slice(-4).reverse()
+    : [];
+
+return (
+  <div style={cardStyle}>
+    {recentExercises.length > 0 ? (
+      <ul style={entryStyle}>
+        {recentExercises.map((exercise) => (
+          <li key={exercise._id}>
+            <strong>Exercise:</strong> {exercise.text}
+            <br />
+            <strong>Reps:</strong> {exercise.reps || "N/A"}
+            <br />
+            <strong>Sets:</strong> {exercise.sets || "N/A"}
+            <br />
+            <strong>Duration:</strong> {exercise.duration || "N/A"} mins
           </li>
-          <li key={mostRecentExercise._id + "_reps"}>
-            <strong>Reps:</strong> {mostRecentExercise.reps || "N/A"}
-          </li>
-          <li key={mostRecentExercise._id + "_sets"}>
-            <strong>Sets:</strong> {mostRecentExercise.sets || "N/A"}
-          </li>
-          <li key={mostRecentExercise._id + "_duration"}>
-            <strong>Duration:</strong> {mostRecentExercise.duration || "N/A"} mins
-          </li>
-        </ul>
-      ) : (
-        <p>No exercises added yet.</p>
-      )}
-    </div>
-  );
-};
+        ))}
+      </ul>
+    ) : (
+      <p>No exercises added yet.</p>
+    )}
+  </div>
+);
+    }
 
 export default WorkoutCard;

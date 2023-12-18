@@ -4,8 +4,8 @@ import React from "react"
 const AddButton=({onClick})=>{
     const buttonStyle={
         backgroundColor:"turquoise",
-        position:"absolute",
-        top:"80%",
+position:"relative",
+        top:"70%",
         left:"67%",
         padding:"10px 50px",
         fontSize:"200%",

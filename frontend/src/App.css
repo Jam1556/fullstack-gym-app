@@ -11,6 +11,7 @@
  .Container-Nav{
   height: 65px;
   border-style: none;
+  background-color: rgb(255, 255, 255);
 }
 
 .header{
@@ -198,7 +199,7 @@
   justify-content: space-evenly;
   flex-direction: row;
 
-  color: white;
+  color: rgb(255, 255, 255);
   
 }
 

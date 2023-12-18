@@ -9,18 +9,18 @@ const AddExercise = ({ onClose }) => {
   const inputStyle = {
     display: "flex",
     flexDirection: "column",
-    position: "absolute",
+position:"relative",
     left: "67%",
-    top: "80%",
+    top: "70%",
     width: "10%",
   };
 
   const buttonStyle = {
     display: "flex",
-    position: "absolute",
+position:"relative",
     left: "77%",
-    top: "86.5%",
-    width: "3%",
+    top: "76.5%",
+    width: "3.5%",
   };
 
   const handleInputChange = (event) => {
@@ -42,6 +42,8 @@ const AddExercise = ({ onClose }) => {
       });
 
       if (response.ok) {
+
+
 
         onClose();
       } else {

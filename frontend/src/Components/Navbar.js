@@ -1,35 +1,26 @@
+import React from 'react'
+import "../App.css"
 
-import React from "react";
-import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  const navStyle = {
-    backgroundColor: "#333",
-    padding: "10px",
-    display: "flex",
-    justifyContent: "space-around",
-    color: "white",
-  };
 
-  const linkStyle = {
-    textDecoration: "none",
-    color: "white",
-    margin: "0 10px",
-  };
+const NavBar = () => {
   return (
+    <div className='Container-Nav'>
 
-    <nav style={navStyle}>
+      <div className='header'>
+        <p className='title'>FitnessUplink &#8482; </p>
 
-          <Link to="/about" style={linkStyle}>About</Link>
+        <i class="bi bi-x-diamond-fill" style={{ fontSize: "2.5rem" }}></i>
+        <p className='workout'>Workouts</p>
+        <p className='stats'>Stats</p>
+        <i class="bi bi-search" style={{ fontSize: "2.5rem" }}></i>
+        <i class="bi bi-person-circle" style={{ fontSize: "2.5rem" }}></i>
 
-          <Link to="/" style={linkStyle}>Home</Link>
 
-          <Link to="/search" style={linkStyle}>Search</Link>
+      </div>
 
-          <Link to="/workout" style={linkStyle}>Workout</Link>
+    </div >
+  )
+}
 
-    </nav>
-  );
-};
-
-export default Navbar;
+export default NavBar
