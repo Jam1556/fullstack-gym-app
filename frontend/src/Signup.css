@@ -1,0 +1,110 @@
+
+
+
+.signup-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.panel{
+  height: 646px;
+  width: 506px;
+  box-shadow: rgb(50, 50, 93) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 23px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+
+}
+
+.text{
+  position: relative;
+  bottom: 80px;
+  font-size: 50px;
+  font-weight: 700;
+  border-bottom: solid;
+  
+}
+
+input{
+  border: none;
+
+}
+
+.input{
+  padding-bottom: 30px;
+
+
+  
+}
+
+.inputs{
+  font-size: 1.3rem;
+  position: relative;
+  bottom: 30px;
+}
+
+.submit-signup{
+  box-sizing: none;
+  cursor: pointer;
+  padding-top: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.continue{
+  position: relative;
+  top: 30px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+
+.continue:hover{
+  color: rgb(0, 224, 255);
+  cursor: pointer;
+}
+
+.submit-login{
+  box-sizing: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+
+.submit-login:hover{
+  color: rgb(0, 224, 255);
+
+}
+
+.submit-signup:hover{
+  color: rgb(0, 224, 255);
+
+}
+
+
+.submit-container{
+  position: relative;
+  border-top:solid ;
+  top: 50px;
+}
+
+.bi-arrow-left{
+  position: relative;
+  bottom: 250px;
+  right: 20px;
+  transition: all 0.3s ease 0s;
+  border-left:  solid;
+  border-radius: 23px;
+  
+}
+
+.bi-arrow-left:hover{
+  color: rgb(0, 224, 255);
+
+}
