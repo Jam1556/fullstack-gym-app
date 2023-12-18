@@ -27,6 +27,8 @@ const HomePageBar = () => {
           <button onClick={() => { setAction('Sign Up') }} type="button" className="btn btn-primary">Sign Up</button>
         </Link>
 
+
+
       </div>
 
 
