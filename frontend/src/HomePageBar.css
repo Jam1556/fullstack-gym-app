@@ -1,0 +1,61 @@
+
+
+.homepage-Container-Nav{
+  border: solid;
+  height: 65px;
+  border-style: none;
+}
+
+.homepage-header{
+  display: flex;
+  flex-direction:  row;
+  justify-content: center;
+  align-items:center;
+}
+
+
+
+.homepage-title{
+
+  font-weight: 900;
+  font-size: 35px;
+  justify-content: left;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  left: 60px;
+
+
+}
+
+.homepage-title:hover{
+
+  color: rgb(0, 224, 255)
+}
+
+
+
+.bi-person-circle-homepage{
+  transform: translate(-30px);
+  padding-left: 30px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  
+}
+
+
+.bi-person-circle-homepage:hover{
+  color: rgb(0, 224, 255)
+}
+
+.btn-primary{
+  position: relative;
+  left: 500px;
+}
+
+.btn-secondary{
+  position: relative;
+  left: 450px;
+}

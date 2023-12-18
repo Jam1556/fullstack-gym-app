@@ -1,40 +1,53 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
-import './App.css';
-import Home from './Pages/Home';
-import About from "./Pages/About"
-import Workout from "./Pages/Workout"
-import Search from "./Pages/Search"
+import "./App.css";
+import StatsPage from "./Pages/statsPage"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import HomePage from "./Pages/HomePage";
+import { useState, UseEffect } from "react";
+import Signup from "./Pages/Signup";
+import "./HomePage.css"
+import HomePageBar from "./Compoents/HomePageBar";
+import { LoginContext } from "./Context/LoginContext";
 
 function App() {
-  const headerStyle = {
-    backgroundColor: "grey",
-  };
 
+  const [action, setAction] = useState("")
 
   return (
-    <div className="App">
-      <BrowserRouter>
-      <h1 style={headerStyle}>Gym App</h1>
-      <Routes>
-        <Route
-        path="/"
-        element={<Home />}
-        />
-        <Route
-        path="/about"
-        element={<About />}
-        />
-        <Route
-        path="/search"
-        element={<Search />}
-        />
-        <Route
-        path="/workout"
-        element={<Workout />}
-        />
-      </Routes>
-   </BrowserRouter>
-    </div>
+
+    <BrowserRouter>
+      <LoginContext.Provider value={{ action, setAction }}>
+
+
+        <Routes>
+          <Route
+
+            path='/StatsPage'
+            element={<StatsPage />}
+
+
+          />
+
+          <Route
+
+            path="/"
+            element={<HomePage />}
+
+
+          />
+
+          <Route
+
+            path="/Signup"
+            element={<Signup />}
+
+
+          />
+
+
+
+        </Routes>
+      </LoginContext.Provider>
+    </BrowserRouter>
   );
 }
 
