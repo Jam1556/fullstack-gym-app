@@ -37,8 +37,9 @@ const Workout = () => {
 
   return (
     <>
+            <Navbar />
       <div>
-        <Navbar />
+  
         <WorkoutCard exercises={exercisesData} />
         <AddButton onClick={AddButtonClick} />
         {showAddExercise && <AddExercise onClose={SubmitWorkoutClick} />}
