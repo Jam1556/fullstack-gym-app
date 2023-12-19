@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/exercise", exerciseRoutes);
 app.use("/exercise/user", userRoutes);
 
-mongoose.connect(procescs.env.MONGODB_URL)
+mongoose.connect(process.env.MONGODB_URL)
 
   .then(() => {
     app.listen(4000, () => {

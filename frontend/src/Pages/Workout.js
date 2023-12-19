@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import NavBar from '../Compoents/navBar'
 import Footer from '../Compoents/Footer'
 import WorkoutDetails from '../Compoents/WorkoutDetails'
+import WorkoutFrom from '../Compoents/WorkoutFrom'
 import '../workout.css'
 
 const Workout = () => {
@@ -39,9 +40,17 @@ const Workout = () => {
     <>
       <NavBar />
       <div className='workout-conatiner'>
+
         {workouts && workouts.map((workouts) => (
           <WorkoutDetails workouts={workouts.text} key={workouts._id} />
         ))}
+
+        <div className='form-box'>
+
+          <WorkoutFrom />
+
+
+        </div>
 
 
 
