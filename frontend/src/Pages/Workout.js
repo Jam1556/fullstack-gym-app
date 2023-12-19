@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar";
 import AddExercise from "../Components/AddExercise";
 import AddButton from "../Components/AddButton";
 import WorkoutCard from "../Components/WorkoutCard";
-import Footer from "../Compoents/Footer";
+import Footer from "../Components/Footer";
 
 const Workout = () => {
   const [showAddExercise, setShowAddExercise] = useState(false);

@@ -1,6 +1,6 @@
 import React from 'react'
-import HomePageBar from '../Compoents/HomePageBar'
-import Footer from '../Compoents/Footer'
+import HomePageBar from '../Components/HomePageBar'
+import Footer from '../Components/Footer'
 
 const HomePage = () => {
   return (

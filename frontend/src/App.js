@@ -5,10 +5,12 @@ import HomePage from "./Pages/HomePage";
 import { useState, UseEffect } from "react";
 import Signup from "./Pages/Signup";
 import "./HomePage.css"
-import HomePageBar from "./Compoents/HomePageBar";
+import HomePageBar from "./Components/HomePageBar";
 import { LoginContext } from "./Context/LoginContext";
 import Workout from "./Pages/Workout";
-
+import NavBar from "./Components/Navbar";
+import Footer from "./Components/Footer"
+import About from "./Pages/About";
 function App() {
 
   const [action, setAction] = useState("")
@@ -50,6 +52,11 @@ function App() {
         element={<Workout />}
         />
 
+<Route
+
+path="/About"
+element={<About />}
+/>
 
         </Routes>
       </LoginContext.Provider>
