@@ -7,6 +7,7 @@ import Signup from "./Pages/Signup";
 import "./HomePage.css"
 import HomePageBar from "./Compoents/HomePageBar";
 import { LoginContext } from "./Context/LoginContext";
+import Workout from "./Pages/Workout";
 
 function App() {
 
@@ -43,6 +44,10 @@ function App() {
 
           />
 
+          <Route
+            path="/Workout"
+            element={<Workout />}
+          />
 
 
         </Routes>

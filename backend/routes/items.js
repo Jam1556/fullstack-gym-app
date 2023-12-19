@@ -4,7 +4,7 @@ const exerciseController = require("../controllers/items")
 
 
 
-router.get("/items", exerciseController.getExcrcise)
+router.get("/items", exerciseController.getExercises)
 router.delete("/items/:id", exerciseController.deleteExercise)
 router.patch("/item/:id", exerciseController.editExercise)
 router.post("/item", exerciseController.createExercise)

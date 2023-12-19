@@ -1,0 +1,13 @@
+.workout-conatiner{
+  border: solid;
+  height: 100vh;
+}
+
+.workouts-detial{
+  border: solid;
+  height: 10vh;
+  width: 100vh;
+  position: relative;
+  left: 20px;
+  top: 40px;
+}
