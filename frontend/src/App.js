@@ -7,6 +7,7 @@ import Signup from "./Pages/Signup";
 import "./HomePage.css"
 import HomePageBar from "./Compoents/HomePageBar";
 import { LoginContext } from "./Context/LoginContext";
+import LoginPage from "./Pages/LoginPage";
 
 function App() {
 
@@ -41,6 +42,14 @@ function App() {
             element={<Signup />}
 
 
+          />
+
+          <Route
+
+            path="/LoginPage"
+            element={<LoginPage />}
+
+            
           />
 
 
