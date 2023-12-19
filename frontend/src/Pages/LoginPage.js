@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Login.css"
+import { loginUser, signupUser } from '../../../backend/controllers/userController'
 
 const LoginPage = () => {
   return (

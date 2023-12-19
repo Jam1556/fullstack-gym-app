@@ -10,7 +10,7 @@ const getExercises = async (req, res) => {
       exercise: items
     })
   } catch (error) {
-    res.status(500).json({ Message: "Unable to get Exercies Error Info" + error })
+    res.status(500).json({ Message: "Unable to get Exercises Error Info" + error })
   }
 }
 
