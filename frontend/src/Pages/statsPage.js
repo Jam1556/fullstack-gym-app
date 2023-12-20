@@ -1,6 +1,6 @@
 import React from 'react'
-import NavBar from '../Compoents/navBar'
-import Footer from '../Compoents/Footer'
+import NavBar from "../Components/Navbar"
+import Footer from '../Components/Footer'
 
 const StatsPage = () => {
   return (

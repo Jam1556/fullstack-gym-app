@@ -11,6 +11,7 @@
  .Container-Nav{
   height: 65px;
   border-style: none;
+  background-color: rgb(255, 255, 255);
 }
 
 .header{
@@ -31,6 +32,10 @@
   transform: translate(70px);
   transition: all 0.3s ease 0s;
   cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  font-family: 'Inter', sans-serif;
 
 }
 
@@ -77,6 +82,9 @@
   transform: translate(180px);
   transition: all 0.3s ease 0s;
   cursor: pointer;
+  outline: none;
+  color: black;
+  text-decoration: none;
 }
 
 .workout:hover{
@@ -95,6 +103,9 @@
   transform: translate(180px);
   transition: all 0.3s ease 0s;
   cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  color: black;
   
 }
 
@@ -198,11 +209,24 @@
   justify-content: space-evenly;
   flex-direction: row;
 
-  color: white;
+  color: rgb(255, 255, 255);
   
 }
 
 .footer-string-1{
   left: 200px;
   font-size: 20px;
+  outline: none;
+  color: White;
+  text-decoration: none;
+}
+
+/*about us---------*/
+
+.about-container{
+  width: 600px;
+  border: solid 2px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: left;
 }

@@ -56,9 +56,12 @@ const editExercise = async (req, res) => {
 
 const createExercise = async (req, res) => {
   try {
-    const { text } = req.body
+    const { text, reps, sets, duration } = req.body
     const createObject = new Exercise({
       text,
+      reps,
+      sets,
+      duration
     })
     const newObject = await createObject.save()
     if (!text) return res.status().json({ Message: "enter text" + req.body })
