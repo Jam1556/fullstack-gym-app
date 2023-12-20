@@ -18,7 +18,7 @@ const LoginPage = () => {
 
     <div className='login-container'>
 
-    {/* form container code  */}
+    {/* Login Form container */}
       <form className="login" onSubmit={handleSubmit}>
       <h3>Log In</h3>
       
